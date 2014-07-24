@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon-precomposed.png" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <title>fox-ui</title>
+
+        <script src="../node_modules/fox-core/dist/foxui.js"></script>
+
+        <link rel="stylesheet" href="../node_modules/fox-core/dist/foxui.css">
+        <link rel="stylesheet" href="css/app.css"/>
+
+        <link rel="import" href="../node_modules/fox-page/dist/fox-page.html"/>
+        <link rel="import" href="../node_modules/fox-page-content/dist/fox-page-content.html"/>
+        <link rel="import" href="../node_modules/fox-toolbar/dist/fox-toolbar.html"/>
+        <link rel="import" href="../node_modules/fox-icon/dist/fox-icon.html"/>
+        <link rel="import" href="../node_modules/fox-sidemenu/dist/fox-sidemenu.html"/>
+
+        <script src="js/3rd/fastclick.js"></script>
+
+        <script src="js/app.js"></script>
+    </head>
+    <body unresolved class="appname">
+        <fox-sidemenu sidemenuWidth="80%">
+
+            <fox-sidemenu-content>
+                <fox-page class="main-page">
+                    <fox-toolbar class="primary" title="FOX-UI">
+                        <fox-icon icon="icon-bars" class="left" onclick="document.querySelector('fox-sidemenu').toggle('left');"></fox-icon>
+                    </fox-toolbar>
+
+                    <fox-page-content>
+                        <p>place content here</p> 
+                    </fox-page-content>
+                </fox-page>
+            </fox-sidemenu-content>
+
+            <fox-sidemenu-menu direction="left">
+
+                <fox-page>
+
+                    <fox-page-content style="background-color: #eee">
+                        <p>place menu here</p>
+                    </fox-page-content>
+
+                </fox-page>
+
+            </fox-sidemenu-menu>
+
+        </fox-sidemenu>
+    </body>
+</html>

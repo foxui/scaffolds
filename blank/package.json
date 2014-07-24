@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "fox-core": "git://github.com/foxui/fox-core.git"
+  }
+}

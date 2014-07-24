@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon-precomposed.png" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <title>fox-ui</title>
+
+        <script src="../node_modules/fox-core/dist/foxui.js"></script>
+
+        <link rel="stylesheet" href="../node_modules/fox-core/dist/foxui.css">
+        <link rel="stylesheet" href="css/app.css"/>
+
+        <link rel="import" href="../node_modules/fox-page/dist/fox-page.html"/>
+        <link rel="import" href="../node_modules/fox-page-content/dist/fox-page-content.html"/>
+        <link rel="import" href="../node_modules/fox-toolbar/dist/fox-toolbar.html"/>
+        <link rel="import" href="../node_modules/fox-icon/dist/fox-icon.html"/>
+
+        <script src="js/3rd/fastclick.js"></script>
+
+        <script src="js/app.js"></script>
+    </head>
+    <body unresolved class="appname main-page">
+        <fox-page id="page3">
+            <fox-toolbar title="Page3"></fox-toolbar>
+            <fox-page-content>
+                <button onclick="history.back();" style="display:block;width:100%;text-align:center;margin-top:60px;">Back</button>
+            </fox-page-content>
+        </fox-page>
+    </body>
+</html>

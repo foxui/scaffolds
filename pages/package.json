@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "fox-core": "git://github.com/foxui/fox-core.git",
+    "fox-page": "git://github.com/foxui/fox-page.git",
+    "fox-page-content": "git://github.com/foxui/fox-page-content.git",
+    "fox-toolbar": "git://github.com/foxui/fox-toolbar.git"
+  }
+}
